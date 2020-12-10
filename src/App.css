@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+body, html, #root, .app, .container {
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-colour {
+background: #D3CCE3;  
+background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  
+background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); 
+font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: darkgrey;
+  font-size: 20px;
+  padding-top: 10px;
+  transition: 2000ms;
+}
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: #D3CCE3;
+  color: grey;
+  text-decoration: underline;
+  transition: 1100ms;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*HOME PAGE*/
+.landing-grid {
+  background: #D3CCE3;
+  background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  
+  background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); 
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  font-size: 28px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
+}
+
+.back-img {
+  height: 80%;
+  width: 95%;
+  padding-top: 5en;
+  position: fixed;
+  top: 20%;
+  bottom: 50%;
+  text-align: center;
+}
+
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+
+.banner-text h1 { 
+  color: #ffffff; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 66px; 
+  font-weight: 300; 
+  padding-top: 20px;
+  padding-bottom: 10px; 
+  margin: auto;
+}
+
+.banner-text h3 {
+  color: #ffffff; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 66px; 
+  font-weight: 300; 
+  padding-bottom: 20px; 
+  margin: auto;
+  
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 70%;
+  padding-bottom: 8en;
+  margin: auto;
+}
+
+.banner-text p {
   color: white;
+  font-size: 20px;
+  padding-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.social-links{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-links i {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+/*RESUME PAGE*/
+.resume-body {
+  margin: auto;
+  background: lightgray;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2en;
+}
+
+/*ABOUT ME PAGE*/
+.about-body {
+  margin: auto;
+  background: grey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2en;
+}
+
+.about-text h1 { 
+    color: #ffffff; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 30px; 
+    font-weight: 300; 
+    padding-top: 20px;
+    padding-bottom: 10px; 
+    margin: auto;
+}
+
+/*SKILLS PAGE*/
+.skills-grid {
+  text-align: center;
+  width: 50%;
+  height: 800px;
+  border: 2px;
+  margin-bottom: 20px;
+  color: #282c34;
+}
+
+/*CONTACT PAGE*/
+.contact-body {
+  margin: auto;
+  background: grey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2en;
+}
+
+.contact-grid {
+  text-align: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  border: 2px;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: 'Cabin', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5en;
+
 }
